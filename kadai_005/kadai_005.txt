@@ -1,0 +1,29 @@
+shoichiro@ShoichironoMacBook-Pro ~ % cd Desktop
+shoichiro@ShoichironoMacBook-Pro Desktop % mkdir git_challenge
+shoichiro@ShoichironoMacBook-Pro Desktop % cd git_challenge
+shoichiro@ShoichironoMacBook-Pro git_challenge % git init 
+Initialized empty Git repository in /Users/shoichiro/Desktop/git_challenge/.git/
+shoichiro@ShoichironoMacBook-Pro git_challenge % touch hello_world.txt
+shoichiro@ShoichironoMacBook-Pro git_challenge % echo 'Hello,world!' > hello_world.txt
+shoichiro@ShoichironoMacBook-Pro git_challenge % git add hello_world.txt
+shoichiro@ShoichironoMacBook-Pro git_challenge % git commit -m 'hello_world.txtを追加'
+[main (root-commit) d5a695e] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+shoichiro@ShoichironoMacBook-Pro git_challenge % echo 'こんにちは、世界！' >> hello_world.txt
+shoichiro@ShoichironoMacBook-Pro git_challenge % git add hello_world.txt
+shoichiro@ShoichironoMacBook-Pro git_challenge % git commit -m '日本語訳を追記'
+[main e1b9ef1] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+shoichiro@ShoichironoMacBook-Pro git_challenge % git log
+commit e1b9ef14533a8b015d58463e4811a2f9ea06c14a (HEAD -> main)
+Author: Shoichiro27 <johnsnow27@icloud.com>
+Date:   Sat May 24 19:38:38 2025 +0900
+
+    日本語訳を追記
+
+commit d5a695e823a0d6aeeaaf49ad0621488ef38a144c
+Author: Shoichiro27 <johnsnow27@icloud.com>
+Date:   Sat May 24 19:35:06 2025 +0900
+
+    hello_world.txtを追加
